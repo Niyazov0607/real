@@ -1,0 +1,147 @@
+.header {
+    // background-image: url(../../assets/images/sky.png);
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    &__logo {
+        z-index: 27;
+    }
+
+    &__items {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        z-index: 25;
+    }
+
+    &__list {
+        span {
+            font-family: inter sans-serif;
+        }
+
+        transition: 0.3s ease;
+        position: relative;
+
+        &::after {
+            transition: 0.3s ease;
+            content: "";
+            width: 0;
+            height: 1px;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &:hover {
+            color: white;
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    &__nth {
+        z-index: 26;
+    }
+
+    &__btn-icon {
+        position: relative;
+    }
+
+    &__button-1 {
+        position: absolute;
+        bottom: 39px;
+        left: 43%;
+    }
+
+    &__button-2 {
+        position: absolute;
+        bottom: -8px;
+        left: 43%;
+    }
+
+    &__btn-name {
+        position: absolute;
+        bottom: 14.5px;
+        left: 20%;
+        background: #00000000;
+    }
+
+    &__button {
+        background: #00000000;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    &__button:hover {
+        color: white;
+    }
+
+    &__btn-title {
+        font-weight: 400;
+        font-size: 16px;
+        font-family: inter sans-serif;
+    }
+
+    &__mobile {
+        display: none;
+    }
+
+    &__mobile-btn {
+        display: none;
+    }
+}
+
+@include mobile() {
+    .nav {
+        .container {
+            min-width: 375px;
+            padding: 0 18px;
+        }
+
+        &__wrapper {
+            justify-content: space-between;
+        }
+
+        &__items {
+            display: none;
+        }
+
+        &__mobile {
+            display: block;
+        }
+
+        &__nth {
+            display: none;
+        }
+
+        &__mobile-btn {
+            display: block;
+        }
+
+        &__mobile-btn-1 {
+            font-family: inter sans-serif;
+            color: black;
+            border-radius: 61px;
+            padding: 10px 12px;
+            border: 1px solid white;
+            background: #00000000;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,276 @@
+.rate {
+    margin: 0 auto;
+    // position: absolute;
+    z-index: 40;
+    padding: 0 47px;
+    margin-left: 39px;
+    // max-width: 1440px;
+
+    &__wrapper {
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+
+    &__bg-img {
+        position: absolute;
+        bottom: 78%;
+        left: 45.9%;
+        z-index: 32;
+    }
+
+    &__world-name {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        font-size: 24px;
+        color: #79655e;
+        padding-top: 50px;
+    }
+
+    &__name {
+        transition: 0.3s ease;
+    }
+
+    &__icon {
+        opacity: 0;
+    }
+
+    &__name:hover {
+        color: black;
+    }
+
+    &__icon:hover {
+        opacity: 1;
+    }
+
+
+    &__title {
+        font-size: 60px;
+        font-weight: 300;
+        font-family: inter sans-serif;
+        z-index: 41;
+        padding-top: 50px;
+    }
+
+    &__card {
+        display: flex;
+        margin-top: 20px;
+        transition: 0.3s ease;
+    }
+
+    &__card:hover {
+        box-shadow: 10px 10px 5px 5px lightslategrey;
+        border-radius: 20px;
+    }
+
+    &__card-2 {
+        display: flex;
+        margin-top: 20px;
+        transition: 0.3s ease;
+    }
+
+    &__card-2:hover {
+        box-shadow: 10px 10px 5px 5px lightslategrey;
+        border-radius: 20px;
+    }
+
+
+    &__local {
+        display: flex;
+        position: absolute;
+        bottom: 21%;
+        left: 12%;
+    }
+
+    &__gra {
+        position: absolute;
+        bottom: 0%;
+    }
+
+    &__gra-2 {
+        position: absolute;
+        bottom: 0%;
+    }
+
+    &__gr {
+        border-radius: 20px;
+    }
+
+    &__imgg {
+        border-radius: 20px;
+    }
+
+    &__location {
+        z-index: 41;
+    }
+
+    &__card-title {
+        color: white;
+        font-size: 36px;
+        font-weight: 300;
+        font-family: inter sans-serif;
+        text-align: left;
+        position: absolute;
+        bottom: 11%;
+        z-index: 9;
+        left: 12%;
+    }
+
+    &__spans {
+        position: absolute;
+        bottom: 5%;
+        left: 12%;
+        z-index: 13;
+        color: white;
+    }
+
+    &__span {
+        display: block;
+    }
+
+    &__iconn {
+        position: absolute;
+        left: 31%;
+        top: 81%;
+        z-index: 17;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__card-title-1 {
+        position: absolute;
+        left: 40%;
+        bottom: 12%;
+        z-index: 42;
+        color: white;
+        font-size: 36px;
+        font-family: inter sans-serif;
+        font-weight: 300;
+    }
+
+    &__local-1 {
+        position: absolute;
+        left: 40%;
+        bottom: 18%;
+        z-index: 44;
+        color: white;
+        display: flex;
+    }
+
+    &__spans-1 {
+        position: absolute;
+        bottom: 5%;
+        color: white;
+        z-index: 44;
+        left: 40%;
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: 5%;
+        z-index: 51;
+        left: 48%;
+    }
+
+    &__button {
+        background: #00000000;
+        color: white;
+        padding: 10px 28px;
+        border: 1px solid;
+        border-radius: 61px;
+    }
+
+    &__iconn-2 {
+        position: absolute;
+        left: 60%;
+        z-index: 50;
+        bottom: 4%;
+    }
+
+    &__iconn-3 {
+        position: absolute;
+        bottom: 4%;
+        left: 88%;
+        z-index: 52;
+    }
+
+    &__local-3 {
+        position: absolute;
+        left: 69%;
+        z-index: 55;
+        color: white;
+        bottom: 17%;
+        display: flex;
+    }
+
+    &__card-title-3 {
+        position: absolute;
+        z-index: 56;
+        left: 69%;
+        bottom: 12%;
+        color: white;
+        font-size: 36px;
+        font-family: inter sans-serif;
+        font-weight: 300;
+    }
+
+    &__spans-3 {
+        position: absolute;
+        z-index: 57;
+        left: 69%;
+        bottom: 5%;
+        color: white;
+    }
+
+    &__button {
+        transition: 0.3s ease;
+    }
+
+    &__button:hover {
+        background: #000;
+        border: none;
+    }
+}
+
+@include mobile() {
+    .rate {
+        position: relative;
+
+        &__wrapper {
+            margin-right: 200px;
+            margin-top: 200px;
+        }
+
+        &__card-2 {
+            display: none;
+        }
+
+        &__local {
+            left: 40%;
+        }
+
+        &__card-title {
+            position: absolute;
+            left: 40%;
+        }
+
+        &__spans {
+            position: absolute;
+            left: 40%;
+        }
+
+        &__iconn {
+            position: absolute;
+            left: 60%;
+        }
+
+        &__t {
+            display: none;
+        }
+    }
+}

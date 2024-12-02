@@ -1,0 +1,207 @@
+.hero {
+    margin-top: 400px;
+    position: relative;
+
+    &__wrapper {
+        text-align: center;
+        position: relative;
+        
+    }
+
+    &__title {
+        font-family: inter sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        text-transform: uppercase;
+        position: absolute;
+        top: -950px;
+        left: 45%;
+    }
+
+    &__sub-title {
+        font-size: 198px;
+        text-transform: uppercase;
+        font-family: inter sans-serif;
+        color: white;
+        font-weight: 400;
+        position: absolute;
+        left: 25%;
+        top: -745px;
+        line-height: 128px;
+    }
+
+    &__sub-title-2 {
+        font-size: 198px;
+        text-transform: uppercase;
+        font-family: inter sans-serif;
+        color: white;
+        font-weight: 400;
+        margin-top: 00px;
+        position: absolute;
+        left: 11%;
+        top: -665px;
+        z-index: 4;
+    }
+
+    &__sub-title-3 {
+        font-size: 141px;
+        text-transform: uppercase;
+        font-family: inter sans-serif;
+        color: white;
+        font-weight: 400;
+        padding-top: 80px;
+        position: absolute;
+        top: -565px;
+        left: 31%;
+    }
+
+    &__position-2 {
+        position: absolute;
+        bottom: -1%;
+    }
+
+    &__position-3 {
+        position: absolute;
+        bottom: -1%;
+        z-index: 16;
+    }
+
+    &__smth {
+        position: absolute;
+        bottom: 250px;
+        left: 580px;
+        z-index: 20;
+    }
+
+    &__button-1 {
+        position: absolute;
+        bottom: 25px;
+        left: 67px;
+    }
+
+    &__button-2 {
+        position: absolute;
+        left: 70px;
+        bottom: -10px;
+    }
+
+    &__gradient {
+        position: absolute;
+        right: -15.4%;
+        bottom: -150%;
+    }
+
+    &__find {
+        position: absolute;
+        background: white;
+        bottom: 225px;
+        left: 36%;
+        z-index: 21;
+        border-radius: 98px;
+    }
+
+    &__find-1 {
+        padding: 13px 46px;
+        color: rgba(121, 101, 94, 1);
+        font-size: 25px;
+        font-family: inter sans-serif;
+        text-transform: uppercase;
+        font-weight: 350;
+    }
+
+    &__info {
+        position: absolute;
+        bottom: 133px;
+        left: 10%;
+        background: white;
+        z-index: 22;
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        padding: 15px 35px;
+        border-radius: 10px;
+    }
+
+    &__ic {
+        position: absolute;
+        bottom: 51%;
+        left: 5.8%;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+    }
+
+    &__span {
+        color: rgba(121, 101, 94, 1);
+        font-weight: 300;
+        font-size: 18px;
+        margin-top: -5px;
+    }
+
+    &__span-2 {
+        font-weight: 500;
+        font-size: 18px;
+        margin-left: 15px;
+    }
+
+    &__button {
+        background: #000;
+        color: white;
+        padding: 26px 50px;
+        border-radius: 121px;
+        font-weight: 400;
+        font-size: 24px;
+        font-family: inter sans-serif;
+    }
+
+    &__btn-icon {
+        position: absolute;
+        bottom: 40%;
+        padding-left: 23px;
+    }
+    
+    &__sky {
+        position: absolute;
+        bottom: 34%;
+        z-index: -28;
+
+    }
+}
+
+@include mobile() {
+    .hero {
+
+        &__wrapper {
+            justify-content: center;
+            text-align: center;
+        }
+
+        &__gradient {
+            position: absolute;
+            right: -19.5%;
+            bottom: -130%;
+        }
+
+        &__info {
+            display: grid;
+            margin-bottom: -320px;
+            margin-left: 320px;
+        }
+
+        &__t {
+            margin-bottom: -150px;
+        }
+
+        &__button {
+            padding: 23px 145px;
+        }
+
+        &__btn-icon {
+            position: absolute;
+            bottom: 9%;
+            left: 30%;
+        }
+    }
+}

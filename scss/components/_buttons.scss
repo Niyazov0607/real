@@ -1,0 +1,193 @@
+.nav {
+
+    &__btn {
+        width: 143px;
+        height: 48px;
+        background: #D6EF0E;
+        border-radius: 8px;
+        border: 1px solid yellow;
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+        transition: 0.3s ease;
+    }
+    &__btn:hover {
+        background: #000;
+        color: yellow;
+    }
+}
+
+.hero {
+
+    &__primary {
+        width: 178px;
+        height: 52px;
+        background: #D6EF0E;
+        border-radius: 8px;
+        border: 1px solid #D6EF0E;
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+        transition: 0.3s ease;
+        margin-top: 30px;
+    }
+
+    &__primary:hover {
+        background: #000;
+        color: yellow;
+    }
+
+    &__btn-secondary {
+        width: 178px;
+        height: 52px;
+        background: #d5ef0e00;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+        transition: 0.3s ease;
+        margin-top: 30px;
+    }
+    &__btn-secondary:hover {
+        color: yellow;
+    }
+
+    &__event-btn {
+        width: 264px;
+        height: 52px;
+        background: #d5ef0e00;
+        border: 1px solid yellow;
+        border-radius: 8px;
+        color: yellow;
+        font-weight: 700;
+        font-size: 18px;
+        transition: 0.3s ease;
+    }
+
+    &__event-btn:hover {
+        background: yellow;
+        color: white;
+    }
+}
+
+.art {
+
+    &__btn {
+        color: white;
+        background: yellow;
+        width: 134px;
+        height: 52px;
+        border-radius: 8px;
+        border: 1px solid yellow;
+        transition: 0.3s ease ;
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: 50px;
+    }
+
+    
+    &__btn:hover {
+        background: #000;
+        color: yellow;
+    }
+
+    &__btn-2 {
+        width: 168px;
+        height: 48px;
+        color: yellow;
+        background: #00000000;
+        border: 1px solid yellow;
+        border-radius: 8px;
+        transition: 0.3s ease;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    &__btn-2:hover {
+        background: yellow;
+        color: white;
+    }
+}
+
+.create {
+
+    &__btn-1 {
+        width: 176px;
+        height: 52px;
+        color: white;
+        background: yellow;
+        border-radius: 8px;
+        margin-top: 50px;
+        font-weight: 700;
+        font-size: 16px;
+        border: 1px solid yellow;
+        transition: 0.3s ease;
+    }
+
+    &__btn-1:hover {
+        background: #000;
+        color: yellow;
+    }
+
+    &__btn-2 {
+        background: #00000000;
+        color: white;
+        border: none;
+        margin-left: 30px;
+        font-weight: 700;
+        font-size: 16px;
+        transition: 0.3s ease;
+    }
+
+    &__btn-2:hover {
+        color: yellow;
+    }
+}
+
+.artist {
+
+    &__button {
+        margin-top: 50px;
+    }
+
+    &__btn {
+        width: 134px;
+        height: 52px;
+        color: white;
+        background: yellow;
+        border-radius: 8px;
+        border: 1px solid yellow;
+        font-weight: 700;
+        font-size: 16px;
+        transition: 0.3s ease;
+    }
+
+    &__btn:hover {
+        background: #000;
+        color: yellow;
+    }
+}
+
+.subscribe {
+
+    &__btn {
+        width: 160px;
+        height: 52px;
+        color: white;
+        background: yellow;
+        border-radius: 8px;
+        border: 1px solid yellow;
+        font-weight: 700;
+        font-size: 16px;
+        transition: 0.3s ease;
+        bottom: 82px;
+        right: 50px;
+        position: absolute;
+    }
+
+    &__btn:hover {
+        background: #000;
+        color: yellow;
+    }
+}

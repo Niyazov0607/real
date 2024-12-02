@@ -1,0 +1,10 @@
+.container {
+    width: 1348px;
+    margin: 0 auto;
+}
+
+@include mobile() {
+    .container {
+        min-width: 375px;
+    }
+}
